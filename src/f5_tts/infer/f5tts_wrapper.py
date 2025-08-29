@@ -137,7 +137,8 @@ class F5TTSWrapper:
         # Load tokenizer
         if vocab_file is None:
             vocab_file = str(files("f5_tts").joinpath("infer/examples/vocab.txt"))
-            print(vocab_file)
+        
+        print(vocab_file)
         tokenizer_type = "custom"
         self.vocab_char_map, vocab_size = get_tokenizer(vocab_file, tokenizer_type)
         

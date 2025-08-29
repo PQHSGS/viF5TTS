@@ -220,7 +220,7 @@ class F5TTSWrapper:
             # Add a flag to check which embedding to use
             self.model.duration_predictor.using_phonemes = False
         
-        def _load_checkpoint(self, model, ckpt_path, dtype=None, use_ema=True):
+    def _load_checkpoint(self, model, ckpt_path, dtype=None, use_ema=True):
         """
         Load model checkpoint with proper handling of different checkpoint formats.
         
